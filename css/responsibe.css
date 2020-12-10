@@ -31,8 +31,11 @@
   }
 
   /*各セクション*/
-  .about,.skill,.vision{
-    background: url(../img/Group-sp.jpg) no-repeat center /cover;
+  .about,.vision{
+    background: url(../img/Group1^sp.jpg) no-repeat center /cover;
+  }
+  .skill{
+    background: url(../img/Group1-rotate-sp.jpg) no-repeat center /cover;
   }
 }
 

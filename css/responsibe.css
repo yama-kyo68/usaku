@@ -14,7 +14,8 @@
   }
   main.bg {
     background-attachment: scroll;
-    background-image: url(../img/Group-sp.jpg);
+    background-image:none;
+    background-color: #000;
   }
   .skill-contents {
     width: 80%;
@@ -27,6 +28,11 @@
   }
   .vision-item {
     word-break: break-all;
+  }
+
+  /*各セクション*/
+  .about,.skill,.vision{
+    background: url(../img/Group-sp.jpg) no-repeat center /cover;
   }
 }
 

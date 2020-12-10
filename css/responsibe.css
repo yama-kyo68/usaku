@@ -13,9 +13,8 @@
     height: 100%;
   }
   main.bg {
-  
-    background-attachment:scroll;
-  
+    background-attachment: scroll;
+    background-image: url(../img/Group-sp.jpg);
   }
   .skill-contents {
     width: 80%;
@@ -153,8 +152,8 @@
   }
   /*about*/
 
-  .about-image img{
-      width: 85%;
+  .about-image img {
+    width: 85%;
   }
   .about-image::after {
     content: "";
@@ -204,10 +203,9 @@
     width: 85%;
     flex-direction: column;
   }
-  
+
   .vision-item .first-img-sp,
   .vision-item .second-img-sp {
-
     bottom: -25%;
   }
 
@@ -215,8 +213,8 @@
   .contact-title::before {
     font-size: 3.5rem;
   }
-  .contact-contents{
-      width: 80%;
+  .contact-contents {
+    width: 80%;
   }
 }
 @media (max-width: 375px) {

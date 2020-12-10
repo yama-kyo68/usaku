@@ -12,6 +12,11 @@
     object-fit: cover;
     height: 100%;
   }
+  main.bg {
+  
+    background-attachment:scroll;
+  
+  }
   .skill-contents {
     width: 80%;
   }

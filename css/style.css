@@ -1,0 +1,720 @@
+/*全体共通*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #000;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+#wrapper{
+  overflow: hidden;
+}
+/*header*/
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+header video {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+
+  max-width: 100%;
+}
+h1 {
+  font-family: "Sorts Mill Goudy", serif;
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  transform: rotate(90deg);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 5rem;
+  font-weight: normal;
+  mix-blend-mode: difference;
+}
+
+.header-scroll {
+  padding-top: 5rem;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f3f3f3;
+}
+.header-scroll span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.header-scroll span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.header-scroll span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.header-scroll span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*main共通*/
+main.bg {
+  background: url(../img/Group\ 1.jpg)
+    no-repeat center / cover;
+  background-attachment: fixed;
+
+}
+section {
+  padding: 5rem 0;
+  width: 100%;
+}
+.main-black-title {
+  color: #f3f3f3;
+  position: relative;
+  text-align: center;
+  padding: 3rem 0;
+}
+.main-white-title {
+  color: #000;
+  position: relative;
+  text-align: center;
+  padding: 3rem 0;
+}
+i {
+  margin: auto;
+  color: #d3b75b;
+}
+
+/*about*/
+
+.about {
+  color: #f3f3f3;
+}
+
+.about-title::before {
+  content: "ABOUT ME";
+  display: block;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #d3b75b;
+  opacity: 0.2;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.about-title::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 2px;
+  background-color: #f3f3f3;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about-contents {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+}
+.about-text,
+.about-image {
+  width: 50%;
+}
+.about-text {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: 1.5s;
+}
+
+.about-image {
+  position: relative;
+  z-index: 1;
+  transform: translateX(10%);
+  opacity: 0;
+  transition: 1.5s;
+}
+.about-image::after {
+  content: "";
+  width: 70%;
+  height: 300px;
+  background-color: #d3b75b;
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: -1;
+}
+.about-image img {
+  display: block;
+  width: 70%;
+}
+.about-text h3 {
+  text-align: center;
+  padding: 2rem 0;
+  color: #d3b75b;
+  font-size: 2rem;
+}
+.about-text {
+  padding: 2rem;
+}
+.about-text p + p {
+  margin-top: 1rem;
+}
+
+/*about anime*/
+
+.about-text.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.about-image.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*skill*/
+.skill {
+  color: #000;
+}
+.skill-title::before {
+  content: "MY SKILLS";
+  display: block;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #d3b75b;
+  opacity: 0.2;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.skill-title::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 2px;
+  background-color: #f3f3f3;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.skill-contents {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.skill-item {
+  width: 45%;
+  padding: 2rem;
+  background-color: #f3f3f3;
+  position: relative;
+}
+/* .skill-item::before,
+.skill-item::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 2rem;
+  background-color: #000;
+  z-index: 1;
+  transform: rotate(-35deg);
+} */
+.skill-item::before {
+  top: -1rem;
+  left: -1.5rem;
+  border-bottom: 2px solid #d3b75b;
+}
+.skill-item::after {
+  bottom: -1rem;
+  right: -1.5rem;
+  border-top: 2px solid #d3b75b;
+}
+.skill-sub-title span {
+  background: linear-gradient(transparent 60%, rgb(230, 157, 73) 60%);
+}
+
+.skill-item-icon {
+  display: flex;
+  font-size: 5rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+.skill-item h3 {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+.skill-left {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: 1.5s;
+}
+.skill-right {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: 1.5s;
+}
+/*skill anime*/
+
+.skill-left.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.skill-right.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*hobby*/
+.hobby {
+  color: #000;
+  background-color: #fff;
+}
+.hobby-title::before {
+  content: "MY HOBBY";
+  display: block;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #d3b75b;
+  opacity: 0.2;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.hobby-title::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hobby-contents {
+  width: 70%;
+  margin: 0 auto;
+}
+.hobby-item {
+  display: flex;
+  margin: 4rem 0;
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 1.5s;
+}
+.hobby-image {
+  width: 60%;
+  height: 200px;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.hobby-text {
+  width: 40%;
+  height: 200px;
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+}
+.hobby-text::before {
+  position: absolute;
+  display: inline-block;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d3b75b;
+  opacity: 0.1;
+  font-size: 12rem;
+  font-weight: bold;
+}
+.first::before {
+  content: "01";
+}
+.second::before {
+  content: "02";
+}
+.third::before {
+  content: "03";
+}
+.filter {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hobby-image:hover .filter {
+  transform: translateY(0);
+}
+.hobby-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.hobby-image:hover img {
+  transform: scale(1.1);
+}
+
+.hobby-image h3 {
+  font-size: 2rem;
+  color: #d3b75b;
+  box-decoration-break: clone;
+  display: inline;
+  padding: 0.3rem;
+  background-color: #f3f3f3;
+}
+
+.hobby-bg-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d3b75b;
+  opacity: 0.2;
+  transform: rotate(25deg);
+  margin-top: 4rem;
+}
+/*hobby anime*/
+
+.hobby-item.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*vision*/
+
+.vision {
+}
+.vision-title::before {
+  content: "MY VISION";
+  display: block;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #d3b75b;
+  opacity: 0.2;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.vision-title::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 2px;
+  background-color: #f3f3f3;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vision-contents {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.vision-item {
+  width: 30%;
+  height: 400px;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  position: relative;
+  transform: translateX(10%);
+  opacity: 0;
+  transition: 1.5s;
+}
+.vision-second {
+  transition-delay: 0.5s;
+}
+.vision-third {
+  transition-delay: 1s;
+}
+.vision-item-title {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.vision-item:first-child {
+  margin-top: 10rem;
+}
+
+.vision-item:nth-child(2) {
+  margin-top: 5rem;
+}
+
+.vision-first::before {
+  content: "01";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: #d3b75b;
+  font-weight: bold;
+  font-size: 3rem;
+  z-index: 2;
+  transform: translate(-50%, -60%);
+}
+.vision-second::before {
+  content: "02";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: #d3b75b;
+  font-weight: bold;
+  font-size: 3rem;
+  z-index: 2;
+  transform: translate(-50%, -60%);
+}
+.vision-third::before {
+  content: "03";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: #d3b75b;
+  font-weight: bold;
+  font-size: 3rem;
+  z-index: 2;
+  transform: translate(-50%, -60%);
+}
+
+.vision-item-title span {
+  background: linear-gradient(transparent 60%, rgb(230, 157, 73) 60%);
+}
+.vision-item img {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  transform: rotate(180deg) translateX(-80%);
+  width: 40%;
+  z-index: 3;
+  opacity: 0;
+  transition: 1s;
+}
+/* .first-img-pc,.first-img-sp {
+  transition-delay: 2s;
+}
+.second-img-pc,.second-img-sp {
+  transition-delay: 2.5s;
+} */
+
+/*vision anime*/
+
+.vision-contents.active .vision-first {
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 10;
+}
+.vision-contents.active .vision-second {
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 8;
+}
+.vision-contents.active .vision-third {
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 6;
+}
+.vision-contents.active .first-img-pc,.vision-contents.active .second-img-pc {
+  opacity: 1;
+}
+.vision-contents.active .first-img-sp,.vision-contents.active .second-img-sp {
+  opacity: 1;
+}
+
+
+.first-img-sp,.second-img-sp{
+  display: none;
+}
+
+/*contact*/
+
+.contact {
+  background-color: #fff;
+}
+.contact-title::before {
+  content: "CONTACT";
+  display: block;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #d3b75b;
+  opacity: 0.2;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.contact-title::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-contents {
+  width: 50%;
+  margin: 0 auto;
+}
+.form-box {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: 1.5s;
+}
+label {
+  display: block;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+input[type="email"],
+input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+}
+textarea {
+  width: 100%;
+  padding: 1rem;
+  resize: none;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+:focus {
+  outline: none;
+}
+input[type="submit"] {
+  padding: 1rem 4.5rem;
+  display: block;
+  margin: 2rem auto 0;
+  background-color: #d3b75b;
+  border: none;
+  font-size: 1.2rem;
+  color: #f3f3f3;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: 1.5s;
+}
+
+label span {
+  background: linear-gradient(transparent 60%, rgb(230, 157, 73) 60%);
+}
+
+/*contact anime*/
+
+.form-box.active,
+input[type="submit"].active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  background-color: #000;
+  padding: 2rem 0;
+  color: #f3f3f3;
+  text-align: right;
+}
+footer p {
+  padding-right: 3rem;
+}
+
+
+/*mouse*/
+.cursor{
+position: fixed;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background: #d3b75b;
+transition: .1s;
+transform: translate(-50%,-50%);
+pointer-events: none;
+mix-blend-mode: difference;
+}
+
+.nav-items li:hover ~ .cursor{
+  transform: scale(4);
+}

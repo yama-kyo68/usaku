@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/loading.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/humbarger.css" />
+    <link rel="stylesheet" href="./css/responsibe.css">
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+      defer
+    ></script>
+    <script src="./js/opening.js" defer></script>
+    <script src="./js/mouse.js" defer></script>
+    <script src="./js/index.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="loading">
+      <section class="loading-section">
+        <div class="loader">
+          <span style="--i: 1"></span>
+          <span style="--i: 2"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 4"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 6"></span>
+          <span style="--i: 7"></span>
+          <span style="--i: 8"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 12"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 20"></span>
+        </div>
+      </section>
+    </div>
+
+
+
+    <div id="wrapper">
+    
+      <header>
+        <nav>
+          <div id="nav-toggle">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="gloval-nav">
+            <nav>
+              <ul class="nav-items">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#skill">MY SKILLS</a></li>
+                <li><a href="#hobby">MY HOBBY</a></li>
+                <li><a href="#vision">MY VISION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <div class="cursor"></div>
+              </ul>
+            </nav>
+          </div>
+        </nav>
+        <h1>My First Portofolio</h1>
+        <a href="#" class="header-scroll"
+          ><span></span><span></span><span></span>Scroll</a
+        >
+        <video
+          src="./img/15201663_MotionElements_particle-launch-001-hd.mp4"
+          webkit-playsinline
+          playsinline
+          autoplay
+          loop
+          muted
+        ></video>
+      </header>
+      <main class="bg">
+        <article>
+          <section class="about" id="about">
+            <h2 class="main-black-title about-title">私について</h2>
+            <div class="about-contents">
+              <div class="about-text js-fade">
+                <h3>岩谷　優作</h3>
+                <p>
+                  私は今プログラミングスクールでプログラミングを勉強しています。
+                </p>
+                <p>
+                  将来的にはフリーランスになれるように、フロントもバックエンドも扱えるフルスタックエンジニアになります。
+                </p>
+              </div>
+              <div class="about-image js-fade">
+                <img src="./img/photographer-67127_640.jpg" alt="岩谷優作" />
+              </div>
+            </div>
+          </section>
+          <section class="skill" id="skill">
+            <h2 class="main-black-title skill-title">できること</h2>
+            <div class="skill-contents">
+              <div class="skill-item skill-left js-fade">
+                <div class="skill-item-icon">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3 class="skill-sub-title">
+                  <span>HTML CSSを用いた<br class="sp-break">コーディング</span>
+                </h3>
+                <p>
+                  デザインを忠実に再現するだけでなく、保守のしやすいコードを書くことができます。
+                </p>
+              </div>
+              <div class="skill-item skill-right js-fade">
+                <div class="skill-item-icon">
+                  <i class="fas fa-utensils"></i>
+                  <i class="fas fa-fish"></i>
+                </div>
+                <h3 class="skill-sub-title"><span>食品関連の質問対応</span></h3>
+                <p>
+                  仕事で食品を扱っているので、食品周りの質問には対応することができます。
+                  気軽に相談してください。
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="hobby" id="hobby">
+            <h2 class="main-white-title hobby-title">すきなこと</h2>
+
+            <div class="hobby-contents">
+              <div class="hobby-item js-fade">
+                <div class="hobby-image hobby-baseball">
+                  <img
+                    src="./img/chris-chow-BhwRQr08PcM-unsplash.jpg"
+                    alt="野球"
+                  />
+                  <div class="filter">
+                    <h3>BASEBALL</h3>
+                  </div>
+                </div>
+
+                <div class="hobby-text first">
+                  <p>高校時代に甲子園を目指して野球をやっていました。</p>
+                  <p>今もたまに草野球をしてます。</p>
+                </div>
+              </div>
+              <div class="hobby-item js-fade item-second">
+                <div class="hobby-text second">
+                  <p>今はプログラミングスクールにて勉強をしています。</p>
+                  <p>休日はずっと朝から晩までコード書いてます。</p>
+                </div>
+                <div class="hobby-image hobby-baseball">
+                  <img
+                    src="./img/james-harrison-vpOeXr5wmR4-unsplash.jpg"
+                    alt="プログラミング"
+                  />
+                  <div class="filter">
+                    <h3>PROGRAMMING</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="hobby-item js-fade">
+                <div class="hobby-image hobby-baseball">
+                  <img src="./img/salad-2068220_640.jpg" alt="料理" />
+                  <div class="filter">
+                    <h3>COOKING</h3>
+                  </div>
+                </div>
+                <div class="hobby-text third">
+                  <p>実は料理が得意だったりします。</p>
+                  <p>休日は必ず手料理を作るように心がけてます。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="vision" id="vision">
+            <h2 class="main-black-title vision-title">目標</h2>
+
+            <div class="vision-contents js-fade">
+              <div class="vision-item vision-first">
+                <h3 class="vision-item-title"><span>スキル習得</span></h3>
+                <p>
+                  プログラミングスクールにて4ヶ月で、HTML,CSS,Javascript,PHP,WordPress,Laravelを習得します。
+                </p>
+                <p>
+                  卒業制作でオリジナルアプリを0-100まで自分で開発をすることで１人で開発できるスキルを身につける予定です。
+                </p>
+                <img class="first-img-pc" src="./img/back-left.svg" alt="" />
+                <img class="first-img-sp" src="./img/arrow-up.svg" alt="" />
+              </div>
+              <div class="vision-item vision-second">
+                <h3 class="vision-item-title"><span>案件獲得</span></h3>
+                <p>
+                  スクール卒業後、勉強は並行しつつ案件獲得にむけて営業の勉強もします。
+                </p>
+                <p>
+                  最初はクラウドワークスやランサーズでも提案はしつつ、ココナラなどの安めな案件で実績を積んでいきます。
+                </p>
+                <img class="second-img-pc" src="./img/back-left.svg" alt="" />
+                <img class="second-img-sp" src="./img/arrow-up.svg" alt="" />
+              </div>
+              <div class="vision-item vision-third">
+                <h3 class="vision-item-title"><span>フリーランスへ</span></h3>
+                <p>
+                  案件を定期的に獲得できるように、人脈形成にも力を入れていきます。
+                </p>
+                <p>そして継続的に案件で稼げ次第フリーランスへ踏み出します。</p>
+              </div>
+            </div>
+          </section>
+          <section class="contact" id="contact">
+            <h2 class="main-white-title contact-title">問合せ</h2>
+
+            <div class="contact-contents">
+              <form action="input.php" method="POST">
+                <div class="form-box js-fade">
+                  <label for="yourname"><span>Name</span></label>
+                  <input
+                    type="text"
+                    name="yourname"
+                    placeholder="お名前"
+                    required
+                  />
+                </div>
+                <div class="form-box js-fade">
+                  <label for="yourmail"><span>Mail</span></label>
+                  <input
+                    type="email"
+                    name="yourmail"
+                    placeholder="メールアドレス"
+                    required
+                  />
+                </div>
+                <div class="form-box js-fade">
+                  <label for="yourtext"><span>Content</span></label>
+                  <textarea
+                    name="yourtext"
+                    id=""
+                    cols="40"
+                    rows="10"
+                    placeholder="問合せ内容を入力してください。"
+                    required
+                  ></textarea>
+                </div>
+                <input type="submit" value="送信" class="js-fade" />
+              </form>
+            </div>
+          </section>
+        </article>
+      </main>
+      <footer>
+        <p><small>&copy;yusaku iwaya</small></p>
+      </footer>
+    </div>
+  </body>
+</html>

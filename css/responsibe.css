@@ -1,0 +1,218 @@
+@media not all and (max-width: 1024px) {
+  .sp-break {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    left: -20%;
+    top: 45%;
+  }
+  header video {
+    object-fit: cover;
+    height: 100%;
+  }
+  .skill-contents {
+    width: 80%;
+  }
+  .skill-item {
+    width: 45%;
+    padding: 2rem;
+    background-color: #f3f3f3;
+    position: relative;
+  }
+  .vision-item {
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+  .sp-break {
+    display: none;
+  }
+  /*header*/
+  h1 {
+    left: -30%;
+  }
+  /*about*/
+  .about-contents {
+    flex-direction: column-reverse;
+    width: 80%;
+  }
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+  .about-image {
+    margin: 2rem 0;
+  }
+  .about-image img {
+    margin: 0 auto;
+  }
+  .about-title::before {
+    font-size: 4rem;
+  }
+
+  /*skill*/
+  .skill-title::before {
+    font-size: 4rem;
+  }
+  .skill-contents {
+    flex-direction: column;
+    width: 60%;
+  }
+  .skill-item {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  /*hobby*/
+  .hobby-title::before {
+    font-size: 4rem;
+  }
+  .hobby-item {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .hobby-image,
+  .hobby-text {
+    width: 100%;
+  }
+  .hobby-text {
+    padding-left: 5rem;
+    height: 100px;
+  }
+  .item-second {
+    flex-direction: column-reverse;
+  }
+  .hobby-text::before {
+    position: absolute;
+    display: inline-block;
+    z-index: -1;
+    top: 1rem;
+    left: 0;
+    transform: translate(0, 0);
+    color: #d3b75b;
+    opacity: 1;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  /*vision*/
+  .vision-title::before {
+    font-size: 4rem;
+  }
+  .vision-contents {
+    width: 60%;
+    flex-direction: column;
+  }
+  .vision-item {
+    width: 100%;
+    height: 300px;
+  }
+  .vision-item:first-child,
+  .vision-item:nth-child(2) {
+    margin: 0 0 7rem 0;
+  }
+
+  .first-img-pc,
+  .second-img-pc {
+    display: none;
+  }
+  .vision-item .first-img-sp,
+  .vision-item .second-img-sp {
+    display: block;
+    width: 20%;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    bottom: -30%;
+  }
+
+  /*contact*/
+  .contact-title::before {
+    font-size: 4rem;
+  }
+}
+/*-----------480---------------*/
+@media (max-width: 480px) {
+  .sp-break {
+    display: block;
+  }
+  section {
+    padding: 3rem 0;
+  }
+  h1 {
+    left: -50%;
+  }
+  /*about*/
+
+  .about-image img{
+      width: 85%;
+  }
+  .about-image::after {
+    content: "";
+    width: 85%;
+    height: 210px;
+  }
+
+  .about-title::before {
+    font-size: 3.5rem;
+  }
+
+  /*skill*/
+  .skill-title::before {
+    font-size: 3.5rem;
+  }
+  .skill-contents {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  /*hobby*/
+  .hobby-title::before {
+    font-size: 3.5rem;
+  }
+  .hobby-item {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+
+  .hobby-text {
+    padding: 1rem;
+    padding-left: 4rem;
+    height: 100px;
+  }
+  .item-second {
+    flex-direction: column-reverse;
+  }
+  .hobby-text::before {
+    font-size: 2rem;
+  }
+
+  /*vision*/
+  .vision-title::before {
+    font-size: 3.5rem;
+  }
+  .vision-contents {
+    width: 85%;
+    flex-direction: column;
+  }
+  
+  .vision-item .first-img-sp,
+  .vision-item .second-img-sp {
+
+    bottom: -25%;
+  }
+
+  /*contact*/
+  .contact-title::before {
+    font-size: 3.5rem;
+  }
+  .contact-contents{
+      width: 80%;
+  }
+}
+@media (max-width: 375px) {
+}
